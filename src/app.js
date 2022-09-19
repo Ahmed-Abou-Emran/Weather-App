@@ -90,5 +90,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.logport(`Server is up and running on port ${port}`);
+  console.log(`Server is up and running on port ${port}`);
 });
