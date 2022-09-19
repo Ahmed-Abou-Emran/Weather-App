@@ -13,7 +13,7 @@ const forecast = (longitude, lattiude, callback) => {
     } else {
       callback(
         undefined,
-        `${response.body.current.weather_descriptions[0]}: The temperatures is ${response.body.current.temperature} degrees out in Celsuis, but it feels like it is ${response.body.current.feelslike} degrees out in Celsuis`
+        `${response.body.current.weather_descriptions[0]}: The temperatures is ${response.body.current.temperature}°C , but it feels like it is ${response.body.current.feelslike}°C. Precipitation is ${response.body.current.precip}% and Wind Speed is ${response.body.current.wind_speed}k/m`
       );
     }
   });
